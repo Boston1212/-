@@ -1,0 +1,20 @@
+学习目标：
+       ·通过conda安装软件（fastqc，multiqc）
+       ·下载数据
+       ·可视化阅读质量
+       ·质量过滤器和修剪读数
+       ·根据Jetstream启动说明启动Jetstream m1.medium或更大版本。
+#conda是一个开源的软件包管理系统和环境管理系统
+#fastqc可以快速多线程地对测序数据进行质量评估，是基于java的软件。multiqc用于整合其它软件的报告的软件，能将fastqc生成的多个报告整合成一个报告的软件，这样能方便的查看所有测序数据的质量，是基于python的软件。
+
+7.1
+·下载conda
+ Anaconda：用于科学计算的python发行版，比Miniconda要大，但方便。
+ 1.进入官网，下载Conda（我下载的是Miniconda，Miniconda只含有最基本的内容--python,conda，以及相关的必须依赖项）
+ 2.下载完成后，进入安装引导界面，请记住安装路径。Miniconda的安装和添加环境变量可以避免后续80%的报错（也可以选择在直接在开始菜单里找到Anaconda Prompt进行conda操作）
+ 3.用conda安装Package：
+ conda install -n package
+# 如果不用-n指定环境名称，则被安装在当前活跃环境  
+# 也可以通过-c指定通过某个channel安装  
+  
+ 
