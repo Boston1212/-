@@ -1,0 +1,10 @@
+###如何通过Xshell将本地文件上传到服务器中
+ ##scp（这个命令的使用真是从第一步开始错到放弃）
+    ##scp localfile.txt username@192.168.0.1:/home/username/
+      #localfile.txt是要上传文件的路径名和文件名
+      #192.168.0.1是要上传的服务器ip地址
+      #/home/username/是要拷入的文件夹路径
+      #在输入本地路径名时总是出现提示：No such file or directory,最后输入的是F：/doc/file.txt
+    ##但在运行后显示ssh：connect to host g port 22:Connection timed out,在找了n多个方法与原因后我放弃了，如果有root权限的话，可以试试sudo apt -get install openssh -server
+  ##最后我尝试了直接输入rz，然后就...可以了（fff）
+  
