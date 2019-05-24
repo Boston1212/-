@@ -16,5 +16,17 @@
  conda install -n package
 # 如果不用-n指定环境名称，则被安装在当前活跃环境  
 # 也可以通过-c指定通过某个channel安装  
-  
+
+7.2
+·创建一个“data”目录
+ mkdir -p data
+ cd data
+·从Schurch等人2016酵母RNAseq的研究中下载一些数据
+ curl -L https://osf.io/5daup/download -o ERR458493.fastq.gz
+ curl -L https://osf.io/8rvh5/download -o ERR458494.fastq.gz
+ curl -L https://osf.io/2wvn3/download -o ERR458495.fastq.gz
+ curl -L https://osf.io/xju4a/download -o ERR458500.fastq.gz
+ curl -L https://osf.io/nmqe6/download -o ERR458501.fastq.gz
+ curl -L https://osf.io/qfsze/download -o ERR458502.fastq.gz
+#我们确保使用md5sum下载了所有数据。 md5sum哈希是一种指纹，可让您与原始文件进行比较。 某些排序工具将为传送给您的文件提供包含md5sum哈希的文件。 通过将md5sum与测序工具生成的原始md5sum进行比较，可以确保完全下载了文件。 如果在下载过程中发生了中断，则文件的所有字节都不会正确传输，你可能会丢失一些序列。
  
