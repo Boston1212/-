@@ -1,2 +1,19 @@
 #什么是SRA？
-The Sequence Read Archive (SRA) stores raw sequence data from "next-generation" sequencing technologies including Illumina, 454, IonTorrent, Complete Genomics, PacBio and OxfordNanopores. In addition to raw sequence data, SRA now stores alignment information in the form of read placements on a reference sequence. 
+   The Sequence Read Archive (SRA) stores raw sequence data from "next-generation" sequencing technologies including Illumina, 454, IonTorrent, Complete Genomics, PacBio and OxfordNanopores. In addition to raw sequence data, SRA now stores alignment information in the form of read placements on a reference sequence. 
+   ·根据SRA数据产生的特点，将SRA数据分为四类：
+      Studies-- 研究课题
+      Experiments-- 实验设计
+      Runs-- 测序结果集
+      Samples-- 样品信息
+   ·SRA中数据结构的层次关系为：Studies->Experiments->Samples->Runs.
+   ·Studies是就实验目标而言的，一个study 可能包含多个Experiment。Experiments包含了Sample、DNA source、测序平台、数据处理等信息。一个Experiment可能包含一个或多个runs。Runs 表示测序仪运行所产生的reads。
+   ·SRA数据库用不同的前缀加以区分：
+    ERP或SRP表示Studies；
+    SRS 表示 Samples；
+    SRX 表示 Experiments；
+    SRR 表示 Runs；
+    
+
+
+1.进入NCBI
+2.
